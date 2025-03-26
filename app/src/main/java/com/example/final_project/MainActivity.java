@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         addExpenditure.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                addNewExpense((++expenseCount)+". New Expense" ,"$ "+ (Math.random()*100));
+                addNewExpense((++expenseCount)+". New Expense" ,"$ "+ Math.floor(Math.random()*100));
             }
         });
 
